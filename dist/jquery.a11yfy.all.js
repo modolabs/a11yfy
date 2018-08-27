@@ -26,8 +26,8 @@
  */
 
 (function (jQuery){
-    var $politeAnnouncer = jQuery("#jquery-a11yfy-politeannouncer"),
-        $assertiveAnnouncer = jQuery("#jquery-a11yfy-assertiveannouncer"),
+    var $politeAnnouncer = jQuery("#jquery-a11yfy-politeannounce"),
+        $assertiveAnnouncer = jQuery("#jquery-a11yfy-assertiveannounce"),
         methods = {
             showAndFocus: function(focus) {
                 var $focus = focus ? jQuery(focus) : focus;
@@ -433,7 +433,7 @@
         platform = ua.match(/iPhone|iPad|iPod/) ? "iOS" :
                     ua.match(/Mac OS X/) ? "OSX" :
                     ua.match(/Windows/) ? "Windows" : "Other";
-    
+
     jQuery.a11yfy = function () {} ;
 
     jQuery.fn.a11yfy = function(method) {
